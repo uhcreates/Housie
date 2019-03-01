@@ -1,19 +1,8 @@
-<!-- <h1>Users</h1>
-
-<ul *ngIf="users">
-  <li *ngFor="let user of users.data">
-    <img [src]="user.avatar">
-    <p>{{ user.first_name }} {{ user.last_name }}</p>
-  </li>
-</ul> -->
-
-
-
 <div class="limiter">
   <div class="container-login100">
     <div class="wrap-login100">
       <div class="login100-pic js-tilt" data-tilt="">
-        <img width="100%" src="assets/logo_4.png" alt="IMG" />      
+        <img width="100%" src="assets/home-img.png" alt="IMG" />      
       </div>
 
       <form #registrationForm="ngForm" (ngSubmit)="registerPlayer(registrationForm)" class="login100-form validate-form" *ngIf="signUp">
@@ -55,7 +44,7 @@
         </div>
         <!-- <label style="color: red; margin-left: 20%" *ngIf="userExist">Email already exist</label> -->
         <div class="container-login100-form-btn">
-          <button class="login100-form-btn" type="button" [routerLink]="['/home']">
+          <button class="login100-form-btn" type="button" [routerLink]="['/match-list']">
             Submit
           </button>
         </div>
@@ -74,7 +63,7 @@
         </span>
 
         <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-          <input class="input100" [(ngModel)]="Login.email" type="text" name="email" placeholder="Email Address">
+          <input class="input100" [(ngModel)]="LoginModel.email" type="text" name="email" placeholder="Email Address">
           <span class="focus-input100"></span>
           <!-- <span class="symbol-input100">
             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -82,7 +71,7 @@
         </div>
         
         <div class="wrap-input100 validate-input" data-validate="Password is required">
-          <input class="input100" [(ngModel)]="Login.passwordHash" type="password" name="pass" placeholder="Password">
+          <input class="input100" [(ngModel)]="LoginModel.passwordHash" type="password" name="pass" placeholder="Password">
           <span class="focus-input100"></span>
           <!-- <span class="symbol-input100">
             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -91,7 +80,7 @@
         <!-- <label style="color: red; margin-left: 20%" *ngIf="userExist">Email already exist</label> -->
 
         <div class="container-login100-form-btn">
-          <button class="login100-form-btn" type="submit">
+          <button class="login100-form-btn" type="button" [routerLink]="['/match-list']">
             Login
           </button>
         </div>

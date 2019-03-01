@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { MatchlistComponent } from './components/matchlist/matchlist.component';
 import { ClaimComponent } from './components/claim/claim.component';
+import { ResultComponent } from './components/result/result.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ClaimComponent } from './components/claim/claim.component';
     LoginComponent,
     HomeComponent,
     MatchlistComponent,
-    ClaimComponent
+    ClaimComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,

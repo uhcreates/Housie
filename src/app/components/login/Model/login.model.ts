@@ -1,7 +1,7 @@
-// export class Login {
-//     email: string;
-//     passwordHash: string;
-// }
+export class LoginModel {
+    email: string;
+    passwordHash: string;
+}
 
 // export class Player {
 //     id: number;
