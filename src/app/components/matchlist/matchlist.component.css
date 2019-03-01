@@ -1,0 +1,14 @@
+.play-now {
+    color: white;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.clickabe-div {
+    cursor: pointer;
+}
+
+ul {
+    display: inherit;
+
+}
